@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Rye&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(209, 195, 175);
+}
+
+.aqui1{
+    background-image: url(../img/caro1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    animation:kenburns-top 5s ease-out both
+}
+.aqui2 {
+    background-image: url(../img/caro2.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    animation:kenburns-top 5s ease-out both
+}
+.aqui3 {
+    background-image: url(../img/caro3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    animation:kenburns-top 5s ease-out both
+}
+.carousel {
+
+}
+
+.carousel {
+    display: flex;
+
+}
+h1{
+    font-family: 'IM Fell English SC', serif;
+    padding-top: 100px ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(223, 211, 196);
+    font-size: 80px;
+    animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+    text-shadow: 0 0 0.5rem #000;
+
+}
+h2{
+    font-family: 'IM Fell English SC', serif;
+    padding-top: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 47, 42);
+    font-size: 40px;
+    text-shadow: 0 0 0.5rem rgb(138, 133, 133);
+}
+h3{
+    font-family: 'IM Fell English SC', serif;
+
+}
+/* menu de navegacion*/
+.collapse {
+    margin-left: 50%;
+}
+.tijera {
+margin: 20px;
+
+}
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "s1 s2"
+    "s3 s4";
+}
+.tx1 {
+    margin: 50px;
+    grid-area: s1;
+    background-color: grey;
+}
+.tx2{
+    margin: 50px;
+    grid-area: s2;
+
+}
+.tx3{
+    margin: 50px;
+    grid-area: s4;
+    background-color: grey;
+
+}
+.tx4{
+    margin: 50px;
+    grid-area: s3;
+
+}
+@keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}}
+@keyframes kenburns-top{0%{transform:scale(1) translateY(0);transform-origin:50% 16%}100%{transform:scale(1.25) translateY(-15px);transform-origin:top}}
